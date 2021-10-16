@@ -6,16 +6,14 @@ using System.Linq;
 using System.Threading.Tasks;
 
 namespace PS_213020_ARTHUR_ERM.Contexts
-{
-    public class NoteContext : DbContext
+{ 
+    public class UserContext : DbContext
     {
-        public NoteContext(DbContextOptions<NoteContext> option) : base(option)
+        public UserContext(DbContextOptions<UserContext> option) : base(option)
         {
 
         }
 
-        public DbSet<Note> Notes { get; set; }
-
-        public DbSet<PS_213020_ARTHUR_ERM.Models.User> User { get; set; }
+        public DbSet<User> Users { get; set; }
     }
 }
